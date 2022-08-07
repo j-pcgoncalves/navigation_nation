@@ -9,6 +9,16 @@ const nav5 = document.getElementById('nav-5');
 const toggleNav = () => {
     // Toggle: Manu Bars Open/Closed
     menuBars.classList.toggle('change');
+
+    // Toggle: Manu Active
+    overlay.classList.toggle('overlay-active');
+    if (overlay.classList.contains('overlay-active')) {
+        // Animate In - Overlay
+        overlay.classList.add('overlay-slide-right');
+    } else {
+        // Animate out - Overlay
+        overlay.classList.add('overlay-slide-left');
+    };
 }
 
 // Event Listeners

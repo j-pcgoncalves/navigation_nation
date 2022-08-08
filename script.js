@@ -14,9 +14,11 @@ const toggleNav = () => {
     overlay.classList.toggle('overlay-active');
     if (overlay.classList.contains('overlay-active')) {
         // Animate In - Overlay
+        overlay.classList.remove('overlay-slide-left');
         overlay.classList.add('overlay-slide-right');
     } else {
         // Animate out - Overlay
+        overlay.classList.remove('overlay-slide-right');
         overlay.classList.add('overlay-slide-left');
     };
 }
